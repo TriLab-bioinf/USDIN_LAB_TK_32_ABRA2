@@ -33,6 +33,16 @@ Finally, to run the pipeline in Biowulf type the following command:
 sbatch --time=24:00:00 bruce_pipeline_2.sh prefix.txt config.cfg
 ```
 
+**Rstudio.server.scripts** folder contains the scripts to run ExonDepth analysis (identification of CNVs) using R in *Rstudio.server* from Biowulf.
+
+As implemented right now, the analysis has to be run interactively from Rstudio.server in Biowulf using the following R script: *run_exomeDepth_server.R*. The R script *aux1-exomedepth.R* contains the actual ExomeDepth function and generated a csv file summarizing the results and two ideogram plots in a folder named *07-exomeDepth*.
+
+Before running you will need to edit the file *control_bams.txt* with the path to each of the control bam files. Also, you will need to adjust the values of the *case_files* and *input_bam_file* variables to point to the correct sample bam file. It is expected that sample bam files are located in folder *04-abra2* and follow the following name convention:
+```
+<SAMPLE PREFIX>_realigned.bam
+```
+
+
 
 
 
