@@ -1,0 +1,8 @@
+intergenic_region
+intron_variant
+downstream_gene_variant
+upstream_gene_variant
+5_prime_UTR_variant
+synonymous_variant
+3_prime_UTR_variant
+non_coding_transcript_exon_variant

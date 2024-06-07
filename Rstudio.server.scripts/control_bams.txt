@@ -1,0 +1,3 @@
+04-abra2/Rad54-M1_realigned.bam
+04-abra2/WT-0640-1_realigned.bam
+04-abra2/WT-0640-2_realigned.bam
